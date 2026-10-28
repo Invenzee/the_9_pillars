@@ -43,8 +43,8 @@ export default function Home() {
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
             <BgVideo
               priority
-              src="/video/gemini_generated_video_081dddd5.mp4"
-              poster="/video/gemini_generated_video_081dddd5.jpg"
+              src="/video/gemini_generated_video_a52eecd1.mp4"
+              poster="/video/gemini_generated_video_a52eecd1.jpg"
             />
             <div className="absolute inset-0 bg-[#001908]/60" />
           </div>
@@ -354,11 +354,6 @@ export default function Home() {
                 <a className="text-sm leading-5 transition duration-300 hover:translate-x-1 hover:text-[#ffb30f]" href="#books">Books</a>
                 <a className="text-sm leading-5 transition duration-300 hover:translate-x-1 hover:text-[#ffb30f]" href="#blogs">Blogs</a>
                 <a className="text-sm leading-5 transition duration-300 hover:translate-x-1 hover:text-[#ffb30f]" href="#contact">Contact</a>
-                <img
-                  className="mt-3 h-auto w-[218px]"
-                  src="/images/payment-icons.png"
-                  alt="Visa, American Express, Mastercard, Discover, PayPal"
-                />
               </nav>
               <SignupForm variant="footer" />
             </div>
