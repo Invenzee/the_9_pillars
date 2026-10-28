@@ -143,23 +143,24 @@ export default function Home() {
           <section className="pt-[146px] pb-[90px] max-[640px]:pt-[72px]" id="author">
             <div className={`${wrap} grid grid-cols-[minmax(0,404px)_minmax(0,540px)] items-center justify-between gap-10 max-[960px]:grid-cols-1 max-[960px]:gap-14`}>
               <Reveal>
-                <div className="group relative aspect-[546/604] w-full max-[960px]:mx-auto max-[960px]:w-[min(100%,420px)]">
-                  <div className="absolute inset-0 overflow-hidden rounded-tr-[37px] rounded-bl-[37px]">
+                <div className="relative aspect-[507/562] w-full max-[960px]:mx-auto max-[960px]:w-[min(100%,420px)]">
+                  <div className="absolute inset-0 overflow-hidden rounded-tr-[32px] rounded-bl-[32px]">
+                    <img className="absolute inset-0 h-full w-full object-cover" src="/images/author-plate.png" alt="" />
                     <img
-                      className="absolute top-[-7.89%] left-[-5.14%] h-auto w-[117.2%] max-w-none transition-transform duration-700 group-hover:scale-[1.03]"
-                      src="/images/author.png"
+                      className="absolute bottom-0 left-1/2 h-[108%] w-auto max-w-none -translate-x-1/2 object-contain"
+                      src="/images/author-portrait.png"
                       alt="Matt DeGroft"
                     />
                   </div>
                   <img
-                    className={`${ornament} top-[3px] left-2.5 -scale-x-100`}
+                    className={`${ornament} top-[-40px] left-[-40px] -scale-x-100 max-[640px]:top-[-28px] max-[640px]:left-[-28px]`}
                     src="/images/corner-photo.svg"
                     alt=""
                     width={134}
                     height={134}
                   />
                   <img
-                    className={`${ornament} right-[-34px] bottom-[-34px] -scale-y-100 max-[640px]:right-[-12px] max-[640px]:bottom-[-12px]`}
+                    className={`${ornament} right-[-40px] bottom-[-40px] -scale-y-100 max-[640px]:right-[-28px] max-[640px]:bottom-[-28px]`}
                     src="/images/corner-photo.svg"
                     alt=""
                     width={134}
