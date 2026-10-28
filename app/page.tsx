@@ -26,7 +26,7 @@ const pillars = [
 ] as const;
 
 const logo =
-  "h-auto w-auto object-contain transition-transform duration-300 hover:-translate-y-[3px] hover:scale-[1.04] max-[640px]:scale-[0.82] max-[640px]:hover:-translate-y-0 max-[640px]:hover:scale-[0.82]";
+  "w-auto shrink-0 object-contain transition-transform duration-300 hover:-translate-y-[3px] hover:scale-[1.04] max-[640px]:scale-[0.82] max-[640px]:hover:-translate-y-0 max-[640px]:hover:scale-[0.82]";
 
 const ornament =
   "pointer-events-none absolute z-[2] h-[clamp(60px,7vw,97px)] w-[clamp(60px,7vw,97px)] max-w-none";
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
 
         <section
-          className="relative z-[1] flex h-[100px] items-center bg-linear-to-r from-[#c16901] to-[#ffc126] max-[960px]:h-auto max-[960px]:py-5"
+          className="relative z-[1] flex h-[100px] items-center overflow-hidden bg-linear-to-r from-[#c16901] to-[#ffc126] max-[960px]:h-auto max-[960px]:overflow-visible max-[960px]:py-5"
           aria-label="Retailers"
         >
           <div className={`${wrap} flex items-center justify-center gap-[43px] max-[960px]:flex-wrap max-[960px]:gap-x-8 max-[960px]:gap-y-[18px]`}>
