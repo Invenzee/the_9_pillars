@@ -1,6 +1,8 @@
+import { BgVideo } from "@/components/bg-video";
 import { PageFrame } from "@/components/page-frame";
 import { Reveal } from "@/components/reveal";
 import { SignupForm } from "@/components/signup-form";
+import { Testimonials } from "@/components/testimonials";
 import { SiteHeader } from "@/components/site-header";
 import { btnGold, btnLine, eyebrow, gold, goldFill, goldTimes, lede, sectionTitle, wrap } from "@/lib/ui";
 
@@ -33,13 +35,18 @@ const ornament =
 
 export default function Home() {
   return (
-    <main className="relative overflow-clip bg-[#001908] pb-[18px]">
+    <main className="relative overflow-clip bg-[#001908]">
       <div className="relative">
         <PageFrame />
 
         <div className="relative isolate">
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-            <img className="h-full w-full max-w-none animate-ken object-cover opacity-[0.49]" src="/images/bg-hero.png" alt="" />
+            <BgVideo
+              priority
+              src="/video/gemini_generated_video_081dddd5.mp4"
+              poster="/video/gemini_generated_video_081dddd5.jpg"
+            />
+            <div className="absolute inset-0 bg-[#001908]/60" />
           </div>
           <SiteHeader />
           <section className="px-0 pt-[108px] pb-[125px] text-center max-[640px]:pt-16 max-[640px]:pb-20" id="home">
@@ -68,7 +75,7 @@ export default function Home() {
         </div>
 
         <section
-          className="relative z-[1] flex h-[100px] items-center overflow-hidden bg-linear-to-r from-[#c16901] to-[#ffc126] max-[960px]:h-auto max-[960px]:overflow-visible max-[960px]:py-5"
+          className="relative z-[70] flex h-[100px] items-center overflow-hidden bg-linear-to-r from-[#c16901] to-[#ffc126] max-[960px]:h-auto max-[960px]:overflow-visible max-[960px]:py-5"
           aria-label="Retailers"
         >
           <div className={`${wrap} flex items-center justify-center gap-[43px] max-[960px]:flex-wrap max-[960px]:gap-x-8 max-[960px]:gap-y-[18px]`}>
@@ -80,10 +87,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative isolate pt-[110px] pb-[120px] max-[640px]:py-[72px]" id="about">
+        <div className="relative isolate">
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-            <img className="h-full w-full max-w-none object-cover opacity-[0.32]" src="/images/bg-pillars.png" alt="" />
+            <BgVideo
+              src="/video/gemini_generated_video_0db122a8.mp4"
+              poster="/video/gemini_generated_video_0db122a8.jpg"
+            />
+            <div className="absolute inset-0 bg-[#001908]/70" />
           </div>
+
+        <section className="relative pt-[110px] pb-[120px] max-[640px]:py-[72px]" id="about">
           <div className={`${wrap} grid grid-cols-[minmax(0,554px)_minmax(0,483px)] items-center justify-between gap-10 max-[960px]:grid-cols-1 max-[960px]:gap-14`}>
             <Reveal>
               <div className="relative">
@@ -125,10 +138,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="relative isolate">
-          <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-            <img className="h-full w-full max-w-none object-cover opacity-[0.09]" src="/images/bg-pillars.png" alt="" />
-          </div>
+        <div className="relative">
 
           <section className="pt-[146px] pb-[90px] max-[640px]:pt-[72px]" id="author">
             <div className={`${wrap} grid grid-cols-[minmax(0,404px)_minmax(0,540px)] items-center justify-between gap-10 max-[960px]:grid-cols-1 max-[960px]:gap-14`}>
@@ -211,10 +221,15 @@ export default function Home() {
             </div>
           </section>
         </div>
+        </div>
 
-        <section className="relative isolate px-0 pt-[120px] pb-[37px] text-center max-[640px]:pt-[72px]" id="books">
+        <section className="relative isolate px-0 pt-[120px] pb-24 text-center max-[640px]:pt-[72px] max-[640px]:pb-16" id="books">
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-            <img className="h-full w-full max-w-none object-cover opacity-[0.24]" src="/images/bg-olympus.png" alt="" />
+            <BgVideo
+              src="/video/gemini_generated_video_91a46f84.mp4"
+              poster="/video/gemini_generated_video_91a46f84.jpg"
+            />
+            <div className="absolute inset-0 bg-[#001908]/75" />
           </div>
           <div className={wrap}>
             <Reveal>
@@ -239,7 +254,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative flex min-h-[219px] items-center overflow-hidden bg-[#001808] py-6 max-[640px]:text-center">
+        <section className="relative flex min-h-[219px] items-center overflow-hidden bg-[#001808] pt-6 pb-16 max-[640px]:text-center">
           <img className="absolute inset-0 h-full w-full max-w-none object-cover mix-blend-luminosity" src="/images/bg-speakers.png" alt="" />
           <div className={`${wrap} relative grid grid-cols-[148px_minmax(0,652px)] items-center justify-center gap-[30px] max-[960px]:grid-cols-[148px_minmax(0,1fr)] max-[640px]:grid-cols-1`}>
             <Reveal>
@@ -267,66 +282,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative isolate pt-[133px] pb-[105px] max-[640px]:py-[72px]" aria-label="Reader quote">
-          <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-            <img className="h-full w-full max-w-none object-cover opacity-[0.16]" src="/images/bg-citadel.png" alt="" />
-          </div>
-          <div className={wrap}>
-            <div className="relative mx-auto h-[482px] w-[min(964px,100%)] max-[1180px]:h-auto max-[1180px]:py-10">
-              <img
-                className="pointer-events-none absolute inset-0 h-full w-full max-w-none object-cover max-[1180px]:object-contain"
-                src="/images/testimonial-wreath.png"
-                alt=""
-              />
-              <img
-                className="absolute top-[134px] left-[calc(50%-467px-27px)] z-[2] h-[55px] w-[55px] max-w-none animate-float-soft rounded-full border-2 border-white object-cover max-[1180px]:hidden"
-                src="/images/avatar-left.png"
-                alt=""
-              />
-              <img
-                className="absolute top-[107px] left-[calc(50%+425px-27px)] z-[2] h-[55px] w-[55px] max-w-none animate-float-soft rounded-full border-2 border-white object-cover [animation-delay:0.7s] max-[1180px]:hidden"
-                src="/images/avatar-right.png"
-                alt=""
-              />
-              <img
-                className="absolute top-[398px] left-[calc(50%-191px-27px)] z-[2] h-[55px] w-[55px] max-w-none animate-float-soft rounded-full [animation-delay:0.35s] max-[1180px]:hidden"
-                src="/images/avatar-dot-left.png"
-                alt=""
-              />
-              <img
-                className="absolute top-[389px] left-[calc(50%+399px-27px)] z-[2] h-[55px] w-[55px] max-w-none animate-float-soft rounded-full [animation-delay:1s] max-[1180px]:hidden"
-                src="/images/avatar-dot-right.png"
-                alt=""
-              />
-              <Reveal className="absolute inset-x-0 top-[43px] z-[3] mx-auto w-[min(536px,100%)] max-[1180px]:relative max-[1180px]:top-auto">
-                <figure className="relative mt-[52px] min-h-[268px] rounded-[10px] bg-white px-11 pt-16 pb-[22px] text-center text-[#616161] shadow-[0_0_20px_rgba(0,0,0,0.15)] max-[640px]:px-5">
-                  <img
-                    className="absolute top-0 left-1/2 h-[104px] w-[104px] max-w-none -translate-x-1/2 -translate-y-1/2 rounded-full border-[3px] border-white object-cover"
-                    src="/images/avatar-center.png"
-                    alt=""
-                  />
-                  <blockquote className="m-0 text-sm leading-[1.45] lowercase">
-                    Lorem Ipsum into electronic typesetting, remaining essentially unchanged. It
-                    was popularised in the 1960s with the release of Letraset sheets containing
-                    Lorem Ipsum passages, and more recently with desktop publishing software like
-                    Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum into electronic
-                    typesetting.publishing software like Aldus PageMaker including versions of
-                    Lorem.
-                  </blockquote>
-                  <img className="mx-auto mt-3.5 mb-1.5 block h-3.5 w-[99px] max-w-none" src="/images/stars.svg" alt="Five stars" width={138} height={19} />
-                  <figcaption>
-                    <strong className="block text-sm font-medium text-[#553a39] uppercase">Lorem Ipsum</strong>
-                    <span className="block text-sm lowercase">Lorem Ipsum into electronic</span>
-                  </figcaption>
-                </figure>
-              </Reveal>
-            </div>
-          </div>
-        </section>
+        <Testimonials />
 
         <div className="relative isolate">
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-            <img className="h-full w-full max-w-none object-cover opacity-[0.13]" src="/images/bg-texture.png" alt="" />
+            <BgVideo
+              src="/video/gemini_generated_video_da132b58.mp4"
+              poster="/video/gemini_generated_video_da132b58.jpg"
+            />
+            <div className="absolute inset-0 bg-[#001908]/75" />
           </div>
 
           <section className="px-0 pt-[105px] pb-[130px] text-center max-[640px]:py-[72px]" id="blogs">
@@ -368,7 +332,7 @@ export default function Home() {
           </section>
 
           <footer className="pb-(--footer-pad)" id="contact">
-            <div className={`${wrap} grid grid-cols-[minmax(0,290px)_minmax(0,218px)_minmax(0,361px)] items-start justify-between gap-8 max-[960px]:grid-cols-2 max-[640px]:grid-cols-1`}>
+            <div className={`${wrap} grid grid-cols-[minmax(0,290px)_minmax(0,218px)_minmax(0,361px)] items-start justify-between gap-8 max-[960px]:grid-cols-2 pb-8 max-[640px]:grid-cols-1`}>
               <div>
                 <p className={`${gold} m-0 font-display text-[clamp(32px,3.1vw,41px)] leading-[1.1] font-normal uppercase`}>
                   The 9 pillars
@@ -399,12 +363,12 @@ export default function Home() {
               <SignupForm variant="footer" />
             </div>
           </footer>
+          <p className="relative z-10 m-0 grid min-h-8 place-items-center bg-[#efaa1c] px-4 py-1 text-center text-sm text-[#20272f] lowercase">
+            the9pillars@copyright
+          </p>
+          <div className="h-6" aria-hidden="true" />
         </div>
       </div>
-
-      <p className="relative m-0 grid min-h-8 place-items-center bg-[#efaa1c] px-4 py-1 text-center text-sm text-[#20272f] lowercase">
-        the9pillars@copyright
-      </p>
     </main>
   );
 }

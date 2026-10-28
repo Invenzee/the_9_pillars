@@ -47,7 +47,7 @@ export function PageFrame() {
   return (
     <div
       ref={ref}
-      className="group pointer-events-none absolute inset-x-(--frame-x) top-(--frame-top) bottom-0 z-[60]"
+      className="group pointer-events-none absolute inset-x-(--frame-x) top-(--frame-top) [bottom:100px] z-[60]"
       aria-hidden="true"
     >
       <img
