@@ -332,7 +332,7 @@ export default function Home() {
           </section>
 
           <footer className="pb-(--footer-pad)" id="contact">
-            <div className={`${wrap} grid grid-cols-[minmax(0,290px)_minmax(0,218px)_minmax(0,361px)] items-start justify-between gap-8 max-[960px]:grid-cols-2 pb-8 max-[640px]:grid-cols-1`}>
+            <div className={`${wrap} grid grid-cols-[minmax(0,290px)_minmax(0,218px)_minmax(0,420px)] items-start justify-between gap-8 max-[960px]:grid-cols-2 pb-8 max-[640px]:grid-cols-1`}>
               <div>
                 <p className={`${gold} m-0 font-display text-[clamp(32px,3.1vw,41px)] leading-[1.1] font-normal uppercase`}>
                   The 9 pillars
