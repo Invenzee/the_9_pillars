@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-poppins), "Poppins", sans-serif;
+  --font-display: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --font-serif: "Times New Roman", Times, serif;
+}
+
+@theme {
+  --animate-sheen: sheen 7s ease-in-out infinite alternate;
+  --animate-ken: ken 30s ease-in-out infinite alternate;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-soft: float 5.5s ease-in-out infinite;
+  --animate-rise: rise 0.9s ease both;
+  --animate-draw: draw-x 1.2s 0.2s ease both;
+  --animate-corner: corner-in 0.9s ease both;
+}
+
+:root {
+  --wrap: min(1140px, calc(100% - 2 * clamp(10px, 2.76vw, 53px) - 40px));
+  --frame-x: clamp(10px, 2.76vw, 53px);
+  --frame-top: clamp(8px, 1vw, 14px);
+  --corner: clamp(54px, 8.4vw, 121px);
+  --footer-pad: max(64px, calc(var(--corner) * 0.62));
+  --hide: 100%;
+}
+
+@layer base {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button,
+  input {
+    font-family: inherit;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes ken {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+@keyframes sheen {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes draw-x {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes corner-in {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
