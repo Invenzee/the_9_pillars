@@ -283,7 +283,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-20 pt-10 pb-20 max-[640px]:px-4" aria-label="Listen on Spotify">
+        <section className="relative isolate px-20 pt-10 pb-20 max-[640px]:px-4" aria-label="Listen on Spotify">
+          <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+            <BgVideo
+              src="/video/gemini_generated_video_081dddd5.mp4"
+              poster="/video/gemini_generated_video_081dddd5.jpg"
+            />
+            <div className="absolute inset-0 bg-[#001908]/70" />
+          </div>
           <div className={wrap}>
             <Reveal>
               <h2 className={`${goldTimes} m-0 text-center font-serif text-[clamp(36px,6vw,96px)] leading-[1.15] font-bold uppercase`}>
