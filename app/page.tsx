@@ -312,7 +312,7 @@ export default function Home() {
                 <p className="m-0 text-lg leading-normal text-justify lowercase max-[960px]:text-center">
                   Experience the story wherever you go. Listen to the audiobook on Spotify.
                 </p>
-                <div className="mt-4 flex w-full items-center justify-between gap-3 text-[15px] leading-5 font-medium whitespace-nowrap max-[640px]:gap-1.5 max-[640px]:text-[11px]">
+                <div className="mt-6 flex w-full items-center justify-between gap-3 text-[15px] leading-5 font-medium whitespace-nowrap max-[640px]:gap-1.5 max-[640px]:text-[11px]">
                   <span className="inline-flex shrink-0 items-center gap-2 max-[640px]:gap-1">
                     <img className="max-[640px]:h-3.5 max-[640px]:w-3.5" src="/images/spotify-calendar.svg" alt="" width={21} height={21} />
                     10- Oct-2026
@@ -320,7 +320,17 @@ export default function Home() {
                   <img className="shrink-0 max-[640px]:h-[25px] max-[640px]:w-[88px]" src="/images/spotify-controls.svg" alt="Playback controls" width={142} height={41} />
                   <span className="shrink-0">01 hrs 30 mins</span>
                 </div>
-                <img className="mt-2.5 block max-[960px]:mx-auto" src="/images/spotify-logo.svg" alt="Spotify" width={184} height={55} />
+                <div className="mt-6 flex w-full flex-wrap items-center gap-6 max-[960px]:justify-center">
+                  <a
+                    className={`${btnGold} h-[50px] w-[300px] font-serif text-[26px] font-bold uppercase max-[640px]:w-full max-[640px]:max-w-[340px] max-[640px]:text-[20px]`}
+                    href="https://open.spotify.com/search/The%209%20Pillars"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Listen on Spotify
+                  </a>
+                  <img className="block" src="/images/spotify-logo.svg" alt="Spotify" width={184} height={55} />
+                </div>
               </div>
             </div>
           </div>
