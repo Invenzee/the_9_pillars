@@ -78,7 +78,7 @@ export default function Home() {
           className="relative z-[70] flex h-[100px] items-center overflow-hidden bg-linear-to-r from-[#c16901] to-[#ffc126] max-[960px]:h-auto max-[960px]:overflow-visible max-[960px]:py-5"
           aria-label="Retailers"
         >
-          <div className={`${wrap} flex items-center justify-center gap-[43px] max-[960px]:flex-wrap max-[960px]:gap-x-8 max-[960px]:gap-y-[18px]`}>
+          <div className={`${wrap} flex w-full items-center justify-evenly max-[960px]:flex-wrap max-[960px]:justify-center max-[960px]:gap-x-10 max-[960px]:gap-y-[18px]`}>
             <img className={`${logo} h-[42px]`} src="/images/logo-amazon.png" alt="Amazon Kindle" />
             <img className={`${logo} h-[33px]`} src="/images/logo-google.png" alt="Google Books" />
             <img className={`${logo} h-9`} src="/images/logo-partner.png" alt="iBooks" />
