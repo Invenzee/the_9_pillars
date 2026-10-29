@@ -84,6 +84,7 @@ export default function Home() {
             <img className={`${logo} h-9`} src="/images/logo-partner.png" alt="iBooks" />
             <img className={`${logo} h-[65px]`} src="/images/logo-barnes.png" alt="Barnes and Noble" />
             <img className={`${logo} h-[39px]`} src="/images/logo-scribd.png" alt="Kobo" />
+            <img className={`${logo} h-10`} src="/images/Vector.png" alt="Spotify" />
           </div>
         </section>
 
