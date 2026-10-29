@@ -283,6 +283,49 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="px-20 pt-10 pb-20 max-[640px]:px-4" aria-label="Listen on Spotify">
+          <div className={wrap}>
+            <Reveal>
+              <h2 className={`${goldTimes} m-0 text-center font-serif text-[clamp(36px,6vw,96px)] leading-[1.15] font-bold uppercase`}>
+                Listen on Spotify
+              </h2>
+            </Reveal>
+            <div className="mt-8 grid w-full grid-cols-[334px_minmax(0,1fr)] items-center gap-x-[61px] max-[960px]:grid-cols-1 max-[960px]:justify-items-center max-[960px]:gap-y-8">
+              <div className="relative h-[402px] w-[334px] max-[640px]:h-auto max-[640px]:w-[min(100%,280px)]">
+                <img
+                  className="pointer-events-none absolute top-[31px] -left-[26px] h-[315px] w-[353px] max-w-none rounded-[10px] object-cover blur-[5px] max-[640px]:top-5 max-[640px]:-left-4 max-[640px]:h-[240px] max-[640px]:w-[280px]"
+                  src="/images/spotify-books-blur.png"
+                  alt=""
+                />
+                <div className="relative z-[1] h-[402px] w-[334px] overflow-hidden max-[640px]:h-auto max-[640px]:w-full">
+                  <img
+                    className="absolute top-0 left-[0.06%] h-[104.49%] w-[105.6%] max-w-none max-[640px]:relative max-[640px]:h-auto max-[640px]:w-full"
+                    src="/images/spotify-book.png"
+                    alt="The 9 Pillars audiobook"
+                  />
+                </div>
+              </div>
+              <div className="w-full min-w-0 text-left max-[960px]:text-center">
+                <h3 className="m-0 text-[clamp(22px,2.4vw,30px)] leading-[1.43] font-medium text-white">
+                  The 9 Pillars of Systematic Theology Concerning Depression
+                </h3>
+                <p className="m-0 text-lg leading-normal text-justify lowercase max-[960px]:text-center">
+                  Experience the story wherever you go. Listen to the audiobook on Spotify.
+                </p>
+                <div className="mt-4 flex w-full items-center justify-between gap-3 text-[15px] leading-5 font-medium whitespace-nowrap max-[640px]:gap-1.5 max-[640px]:text-[11px]">
+                  <span className="inline-flex shrink-0 items-center gap-2 max-[640px]:gap-1">
+                    <img className="max-[640px]:h-3.5 max-[640px]:w-3.5" src="/images/spotify-calendar.svg" alt="" width={21} height={21} />
+                    10- Oct-2026
+                  </span>
+                  <img className="shrink-0 max-[640px]:h-[25px] max-[640px]:w-[88px]" src="/images/spotify-controls.svg" alt="Playback controls" width={142} height={41} />
+                  <span className="shrink-0">01 hrs 30 mins</span>
+                </div>
+                <img className="mt-2.5 block max-[960px]:mx-auto" src="/images/spotify-logo.svg" alt="Spotify" width={184} height={55} />
+              </div>
+            </div>
+          </div>
+        </section>
+
         <Testimonials />
 
         <div className="relative isolate">
