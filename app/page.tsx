@@ -118,10 +118,12 @@ export default function Home() {
                 </h2>
                 <p className={`${lede} normal-case`}>{aboutText}</p>
                 <div className="mt-7 flex flex-wrap gap-[22px]">
-                  <a className={btnLine} href="#books">
-                    Read Now
-                  </a>
-                  <a className={btnGold} href={amazonUrl} target="_blank" rel="noopener noreferrer">
+                  <a
+                    className={`${btnGold} h-[50px] w-[213px] font-serif text-[26px] font-bold uppercase`}
+                    href={amazonUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Buy Now
                   </a>
                 </div>
@@ -179,8 +181,13 @@ export default function Home() {
                   </h2>
                   <p className={`${lede} normal-case`}>{authorText}</p>
                   <div className="mt-7 flex flex-wrap gap-[22px]">
-                    <a className={btnLine} href="#author">
-                      read More
+                    <a
+                      className={`${btnGold} h-[50px] w-[213px] font-serif text-[26px] font-bold uppercase`}
+                      href={amazonUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Buy Now
                     </a>
                   </div>
                   <blockquote className="relative mt-[22px] grid min-h-[108px] place-items-center rounded-tl-[10px] rounded-bl-[10px] bg-[rgba(81,81,81,0.4)] px-10 py-6">
