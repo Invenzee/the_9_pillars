@@ -7,38 +7,38 @@ import { Reveal } from "@/components/reveal";
 const people = [
   {
     src: "/images/avatar-center.png",
-    name: "A Reader",
-    detail: "Reader",
+    name: "James Whitaker",
+    detail: "Pastor, Portland, Maine",
     quote:
       "For anyone who struggles with depression and wonders if God cares, this book answers with the power of God and His love for the whole person.",
   },
   {
     src: "/images/avatar-left.png",
-    name: "Marcus Hale",
-    detail: "Reader, systematic theology",
+    name: "Rebecca Collins",
+    detail: "Licensed Counselor, Boston, Massachusetts",
     quote:
-      "The pillars name the weight honestly, then set Christ, the church, and the word back under my feet. It did not rush the grief.",
+      "It treats depression as something the gospel can speak to. Healing here is wholistic, not only spiritual and not only clinical.",
   },
   {
     src: "/images/avatar-right.png",
-    name: "Elena Voss",
-    detail: "Pastor and reader",
+    name: "Daniel Brooks",
+    detail: "Church Elder, Dallas, Texas",
     quote:
       "I have sat with people in depression for years. This is the book I wanted: theology that cares for body, mind, and spirit together.",
   },
   {
     src: "/images/avatar-dot-left.png",
-    name: "Jonah Reed",
-    detail: "Small group leader",
+    name: "Catherine Moore",
+    detail: "Ministry Director, Chicago, Illinois",
     quote:
-      "We read it aloud. It is plain enough for a Tuesday night, and deep enough to show that God’s ways are better than ours.",
+      "The pillars name the weight honestly, then set Christ, the church, and the word back under my feet. It did not rush the grief.",
   },
   {
     src: "/images/avatar-dot-right.png",
-    name: "Priya Shah",
-    detail: "Counselor",
+    name: "Andrew Sullivan",
+    detail: "Small Group Leader, Denver, Colorado",
     quote:
-      "It treats depression as something the gospel can speak to. Healing here is wholistic, not only spiritual and not only clinical.",
+      "We read it aloud. It is plain enough for a Tuesday night, and deep enough to show that God’s ways are better than ours.",
   },
 ] as const;
 
