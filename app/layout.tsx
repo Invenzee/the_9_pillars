@@ -17,7 +17,8 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   title: "The 9 Pillars",
-  description: "Of Systematic Theology Concerning Depression",
+  description:
+    "The 9 Pillars of Systematic Theology Concerning Depression, by Matt DeGroft. A book about the power of God and His love for anyone who struggles with depression.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

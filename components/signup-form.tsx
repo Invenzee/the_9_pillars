@@ -40,8 +40,8 @@ export function SignupForm({ variant }: SignupFormProps) {
 
   return (
     <div className="w-full bg-[#e2e2e2] px-7 pt-6 pb-7 text-[#20272f] max-[960px]:col-span-full">
-      <p className="m-0 text-center text-sm leading-snug">Sign up for exclusive content, emails & things</p>
-      <p className="mt-1.5 text-center text-sm leading-snug">We doesn’t share anywhere else.</p>
+      <p className="m-0 text-center text-sm leading-snug">Sign up for notes on the book and new writing</p>
+      <p className="mt-1.5 text-center text-sm leading-snug">We don’t share your details anywhere else.</p>
       {done ? (
         <p className="mt-4 text-sm text-[#20272f]">Thank you. Your details have been received.</p>
       ) : (

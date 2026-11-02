@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { btnGold, gold, navLink, wrap } from "@/lib/ui";
+import { amazonUrl, btnGold, gold, navLink, wrap } from "@/lib/ui";
 
 const links = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#books", label: "Books" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#books", label: "Books" },
+  { href: "/#blogs", label: "Blogs" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
@@ -16,7 +17,7 @@ export function SiteHeader() {
   return (
     <header className="relative z-20 flex h-[112px] items-center bg-[#01140d] pt-[26px] max-[960px]:h-24 max-[960px]:pt-[18px]">
       <div className={`${wrap} relative flex items-center justify-between gap-6`}>
-        <a className={`${gold} font-display text-[clamp(24px,2.2vw,30px)] leading-none font-normal uppercase`} href="#home">
+        <a className={`${gold} font-display text-[clamp(24px,2.2vw,30px)] leading-none font-normal uppercase`} href="/#home">
           The 9 pillars
         </a>
         <button
@@ -42,7 +43,9 @@ export function SiteHeader() {
           ))}
           <a
             className={`${btnGold} h-[29px] w-[122px] font-serif text-[15px] font-bold uppercase`}
-            href="#books"
+            href={amazonUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
           >
             Buy Now

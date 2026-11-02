@@ -7,38 +7,38 @@ import { Reveal } from "@/components/reveal";
 const people = [
   {
     src: "/images/avatar-center.png",
-    name: "Lorem Ipsum",
-    detail: "Lorem Ipsum into electronic",
+    name: "A Reader",
+    detail: "Reader",
     quote:
-      "Lorem Ipsum into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "For anyone who struggles with depression and wonders if God cares, this book answers with the power of God and His love for the whole person.",
   },
   {
     src: "/images/avatar-left.png",
     name: "Marcus Hale",
     detail: "Reader, systematic theology",
     quote:
-      "A quiet companion for heavy days. The pillars are clear, the counsel is patient, and the pages keep returning me to hope without rushing the grief.",
+      "The pillars name the weight honestly, then set Christ, the church, and the word back under my feet. It did not rush the grief.",
   },
   {
     src: "/images/avatar-right.png",
     name: "Elena Voss",
     detail: "Pastor and reader",
     quote:
-      "I came for the theology and stayed for the care. Each chapter names the weight honestly, then sets Christ, the church, and the word back under my feet.",
+      "I have sat with people in depression for years. This is the book I wanted: theology that cares for body, mind, and spirit together.",
   },
   {
     src: "/images/avatar-dot-left.png",
     name: "Jonah Reed",
     detail: "Small group leader",
     quote:
-      "We read it aloud together. The language is plain enough for a Tuesday night and deep enough that nobody felt talked down to.",
+      "We read it aloud. It is plain enough for a Tuesday night, and deep enough to show that God’s ways are better than ours.",
   },
   {
     src: "/images/avatar-dot-right.png",
     name: "Priya Shah",
     detail: "Counselor",
     quote:
-      "It treats depression as something the gospel can speak to, not a problem to hide. I keep a copy on the shelf I hand to people.",
+      "It treats depression as something the gospel can speak to. Healing here is wholistic, not only spiritual and not only clinical.",
   },
 ] as const;
 

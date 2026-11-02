@@ -1,3 +1,5 @@
+export const amazonUrl = "https://www.amazon.com/dp/B0HPWGCDD2";
+
 export const wrap = "mx-auto w-(--wrap)";
 
 export const goldFill =

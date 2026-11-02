@@ -3,25 +3,27 @@ import { PageFrame } from "@/components/page-frame";
 import { Reveal } from "@/components/reveal";
 import { SignupForm } from "@/components/signup-form";
 import { Testimonials } from "@/components/testimonials";
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { btnGold, btnLine, eyebrow, gold, goldFill, goldTimes, lede, sectionTitle, wrap } from "@/lib/ui";
+import { posts } from "@/lib/posts";
+import { amazonUrl, btnGold, btnLine, eyebrow, goldFill, goldTimes, lede, sectionTitle, wrap } from "@/lib/ui";
 
 const heroText =
-  "Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers. Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers.";
+  "A full display of the power of God and His comprehensive love for anyone who struggles with depression, or loves someone who does and wonders if God cares.";
 
 const aboutText =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+  "A full display of the power of God and His comprehensive love for humanity is shown throughout this book. For anyone who struggles with depression or knows someone who does and wonders if God cares, this is your book. I understand this struggle, and I have been through many depressions in life with secular professional psychologists and Christian counselors. My joy in writing this book is that there is healing of a wholistic nature, not just physical, mental, emotional, or spiritual, but every part of human nature.";
 
 const authorText =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+  "Matt DeGroft, husband of 14 years, father of three, and someone who trusts God with his past, present, and future, describes the person in the picture above. After living in all four corners of the United States as well as in the middle, he settled down in Maine. With a bachelor’s in Bible and a master’s in theological studies, Matt is working toward a Master of Science in Counseling to become a Licensed Professional Counselor in the State of Maine. His life is a tapestry of God’s grace, from failure after risky failure to running back to God and learning that His ways are better than ours.";
 
 const pillars = [
   ["Pillar 1", "Christology — Christ, Our Foundation"],
   ["Pillar 2", "Anthropology — The Nature of Mankind"],
   ["Pillar 3", "Hamartiology — The Sin of Man"],
   ["Pillar 4", "Soteriology — Salvation’s Effect on Depression"],
-  ["Pillar 4", "Bibliology — The Importance of God’s Word"],
-  ["Pillar 5", "Pneumatology — God’s Personal Helper"],
+  ["Pillar 5", "Bibliology — The Importance of God’s Word"],
+  ["Pillar 6", "Pneumatology — God’s Personal Helper"],
   ["Pillar 7", "Ecclesiology — The Church and Community"],
   ["Pillar 8", "Eschatology — Hope for the Future"],
   ["Pillar 9", "Angelology — Angels as Messengers and Helpers"],
@@ -66,7 +68,7 @@ export default function Home() {
                 <a className={btnLine} href="#about">
                   read More
                 </a>
-                <a className={btnGold} href="#books">
+                <a className={btnGold} href={amazonUrl} target="_blank" rel="noopener noreferrer">
                   Buy Now
                 </a>
               </div>
@@ -114,12 +116,12 @@ export default function Home() {
                   <br />
                   of Systematic Theology Concerning Depression
                 </h2>
-                <p className={lede}>{aboutText}</p>
+                <p className={`${lede} normal-case`}>{aboutText}</p>
                 <div className="mt-7 flex flex-wrap gap-[22px]">
                   <a className={btnLine} href="#books">
                     Read Now
                   </a>
-                  <a className={btnGold} href="#books">
+                  <a className={btnGold} href={amazonUrl} target="_blank" rel="noopener noreferrer">
                     Buy Now
                   </a>
                 </div>
@@ -175,7 +177,7 @@ export default function Home() {
                   <h2 className="m-0 font-serif text-[clamp(24px,2.2vw,29px)] leading-[1.154] font-normal uppercase">
                     <strong className="font-bold">About</strong> <span className="text-[#fabb23]">Matt DeGroft</span>
                   </h2>
-                  <p className={lede}>{authorText}</p>
+                  <p className={`${lede} normal-case`}>{authorText}</p>
                   <div className="mt-7 flex flex-wrap gap-[22px]">
                     <a className={btnLine} href="#author">
                       read More
@@ -189,9 +191,8 @@ export default function Home() {
                       width={602}
                       height={172}
                     />
-                    <p className="relative m-0 max-w-[372px] text-center text-sm italic lowercase">
-                      Lorem Ipsum into electronic typesetting, remaining essentially unchanged.{" "}
-                      <span className="not-italic">was popularised in the 1960s with the release</span>
+                    <p className="relative m-0 max-w-[372px] text-center text-sm italic">
+                      His ways are better than ours.
                     </p>
                   </blockquote>
                 </div>
@@ -248,7 +249,9 @@ export default function Home() {
               </div>
               <a
                 className={`${btnGold} relative -mt-[42px] h-[50px] w-[213px] font-serif text-[26px] font-bold uppercase`}
-                href="#books"
+                href={amazonUrl}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Buy Now
               </a>
@@ -274,10 +277,9 @@ export default function Home() {
               <h2 className="m-0 text-[22px] leading-[1.3] font-semibold capitalize">
                 download My <span className="text-[#ffb30f]">E-Book</span> From Amazon
               </h2>
-              <p className="mt-2 text-justify text-sm leading-[1.45] lowercase max-[640px]:text-left">
-                Lorem Ipsum into electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                passages.
+              <p className="mt-2 text-justify text-sm leading-[1.45] max-[640px]:text-left">
+                Get The 9 Pillars of Systematic Theology Concerning Depression on Amazon. Written for
+                anyone who struggles with depression, or loves someone who does, and wonders if God cares.
               </p>
               <SignupForm variant="band" />
             </Reveal>
@@ -361,69 +363,39 @@ export default function Home() {
                 <h2 className={`${sectionTitle} ${goldTimes}`}>Blogs</h2>
               </Reveal>
               <div className="mx-auto mt-[22px] grid w-full max-w-[1031px] grid-cols-3 gap-[22px] text-left max-[960px]:grid-cols-2 max-[640px]:mx-auto max-[640px]:max-w-[360px] max-[640px]:grid-cols-1">
-                {[0, 1, 2].map((index) => (
-                  <Reveal key={index} delay={index * 100}>
-                    <article className="group flex h-full flex-col overflow-hidden border border-black bg-[#fffaef] shadow-[5px_5px_9px_rgba(0,0,0,0.25)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[8px_12px_18px_rgba(0,0,0,0.35)]">
+                {posts.map((post, index) => (
+                  <Reveal key={post.slug} delay={index * 100}>
+                    <a
+                      className="group flex h-full flex-col overflow-hidden border border-black bg-[#fffaef] text-black no-underline shadow-[5px_5px_9px_rgba(0,0,0,0.25)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[8px_12px_18px_rgba(0,0,0,0.35)]"
+                      href={`/blog/${post.slug}`}
+                    >
                       <img
                         className="block aspect-[458/353] w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                        src="/images/blog-photo.png"
-                        alt=""
+                        src={post.image}
+                        alt={post.imageAlt}
                       />
-                      <div className="flex min-h-[142px] flex-1 items-center justify-between gap-4 bg-[#fffaef] pt-[26px] pr-[22px] pb-[30px] pl-8 font-[family-name:var(--font-blog),Nunito,sans-serif] text-black">
+                      <div className="flex min-h-[142px] flex-1 items-center justify-between gap-4 bg-[#fffaef] pt-[26px] pr-[22px] pb-[30px] pl-8 font-[family-name:var(--font-blog),Nunito,sans-serif]">
                         <div>
-                          <h3 className="mb-1.5 text-[15px] leading-[1.16] font-bold uppercase">Lorem ipsum</h3>
-                          <p className="m-0 max-w-[149px] text-[15px] leading-[1.16] font-light capitalize">
-                            Lorem ipsum dolor sit amet, consectetuer
-                          </p>
+                          <h3 className="mb-1.5 text-[15px] leading-[1.16] font-bold uppercase">{post.title}</h3>
+                          <p className="m-0 max-w-[180px] text-[15px] leading-[1.16] font-light">{post.excerpt}</p>
                         </div>
-                        <a
-                          className="grid h-[30px] w-[30px] shrink-0 place-items-center rounded-full border-[1.5px] border-black transition duration-300 hover:bg-black hover:text-[#fffaef]"
-                          href="#blogs"
-                          aria-label="Read post"
+                        <span
+                          className="grid h-[30px] w-[30px] shrink-0 place-items-center rounded-full border-[1.5px] border-black transition duration-300 group-hover:bg-black group-hover:text-[#fffaef]"
+                          aria-hidden="true"
                         >
-                          <svg className="h-[15px] w-[15px] fill-none stroke-current stroke-2 transition-transform duration-300 [stroke-linecap:round] [stroke-linejoin:round] group-hover:translate-x-0.5" viewBox="0 0 24 24" aria-hidden="true">
+                          <svg className="h-[15px] w-[15px] fill-none stroke-current stroke-2 transition-transform duration-300 [stroke-linecap:round] [stroke-linejoin:round] group-hover:translate-x-0.5" viewBox="0 0 24 24">
                             <path d="M5 12h13M13 6l6 6-6 6" />
                           </svg>
-                        </a>
+                        </span>
                       </div>
-                    </article>
+                    </a>
                   </Reveal>
                 ))}
               </div>
             </div>
           </section>
 
-          <footer className="pb-(--footer-pad)" id="contact">
-            <div className={`${wrap} grid grid-cols-[minmax(0,290px)_minmax(0,218px)_minmax(0,420px)] items-start justify-between gap-8 max-[960px]:grid-cols-2 pb-8 max-[640px]:grid-cols-1`}>
-              <div>
-                <p className={`${gold} m-0 font-display text-[clamp(32px,3.1vw,41px)] leading-[1.1] font-normal uppercase`}>
-                  The 9 pillars
-                </p>
-                <p className="mt-1.5 max-w-[245px] text-justify text-sm leading-5 lowercase">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry&apos;s standard the industry&apos;s standard dummy text
-                  since.
-                </p>
-                <div className="relative mt-3 h-[21px] w-[125px]">
-                  <img className="block h-[21px] w-[125px] max-w-none" src="/images/social-b.svg" alt="Social links" width={174} height={30} />
-                  <img className="absolute top-[9px] left-[50px] h-0.5 w-0.5 max-w-none" src="/images/social-a.svg" alt="" width={3} height={3} />
-                </div>
-              </div>
-              <nav className="flex flex-col items-start" aria-label="Short links">
-                <strong className="text-sm leading-5 font-bold text-[#ffb30f] uppercase">Short Links</strong>
-                <a className="text-sm leading-5 transition duration-300 hover:translate-x-1 hover:text-[#ffb30f]" href="#home">Home</a>
-                <a className="text-sm leading-5 transition duration-300 hover:translate-x-1 hover:text-[#ffb30f]" href="#about">About</a>
-                <a className="text-sm leading-5 transition duration-300 hover:translate-x-1 hover:text-[#ffb30f]" href="#books">Books</a>
-                <a className="text-sm leading-5 transition duration-300 hover:translate-x-1 hover:text-[#ffb30f]" href="#blogs">Blogs</a>
-                <a className="text-sm leading-5 transition duration-300 hover:translate-x-1 hover:text-[#ffb30f]" href="#contact">Contact</a>
-              </nav>
-              <SignupForm variant="footer" />
-            </div>
-          </footer>
-          <p className="relative z-10 m-0 grid min-h-8 place-items-center bg-[#efaa1c] px-4 py-1 text-center text-sm text-[#20272f] lowercase">
-            the9pillars@copyright
-          </p>
-          <div className="h-6" aria-hidden="true" />
+          <SiteFooter />
         </div>
       </div>
     </main>
