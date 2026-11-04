@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Nunito, Poppins } from "next/font/google";
+import { BookPopup } from "@/components/book-popup";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -27,7 +28,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${poppins.variable} ${nunito.variable} scroll-smooth motion-reduce:scroll-auto`}
     >
-      <body className="min-w-80 bg-[#001908] font-sans text-sm leading-normal text-white">{children}</body>
+      <body className="min-w-80 bg-[#001908] font-sans text-sm leading-normal text-white">
+        {children}
+        <BookPopup />
+      </body>
     </html>
   );
 }

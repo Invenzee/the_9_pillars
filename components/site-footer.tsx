@@ -14,10 +14,13 @@ export function SiteFooter() {
               The 9 Pillars of Systematic Theology Concerning Depression. A book about the power
               of God and His love for the whole person.
             </p>
-            <div className="relative mt-3 h-[21px] w-[125px]">
-              <img className="block h-[21px] w-[125px] max-w-none" src="/images/social-b.svg" alt="Social links" width={174} height={30} />
-              <img className="absolute top-[9px] left-[50px] h-0.5 w-0.5 max-w-none" src="/images/social-a.svg" alt="" width={3} height={3} />
-            </div>
+            <img
+              className="mt-3 block h-[21px] w-auto"
+              src="/images/social-b.svg"
+              alt="Facebook, Instagram, and LinkedIn"
+              width={102}
+              height={30}
+            />
           </div>
           <nav className="flex flex-col items-start" aria-label="Short links">
             <strong className="text-sm leading-5 font-bold text-[#ffb30f] uppercase">Short Links</strong>
